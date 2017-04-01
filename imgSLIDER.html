@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hinata Japaneese language School</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/mainSLIDER.css" />
+
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+	</head>
+	<body>
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+		<!-- 	<div class="logo">
+				<img src="images/logo.png">
+			</div> -->
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a id="logo" href="#"><img src="https://raw.githubusercontent.com/ShadyXV/HinataLanguageSchool/gh-pages/images/logo.PNG"></a></li>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">Who we are</a></li>
+							<li><a href="#two">What we do</a></li>
+							<li><a href="#three">Get in touch</a></li>
+						</ul>
+					</nav>
+				</div> 	
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				
+
+    				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up slide">
+						<div class="inner">
+							  <div id="slider">
+                				<ul class="slides">
+                    					<li class="slide slide1">
+	                    					<div class="slide_content">	
+												<h1>Hinata</h1>
+												<p>A japaneese language training insitute.<br />
+												Based in the heart of KTM.</p>
+												<ul class="actions">
+												<li><a href="#one" class="button scrolly">Learn more</a></li>
+												</ul>
+											</div>
+										</li>
+
+                    					<li class="slide slide2">
+	                    					<div class="slide_content">	
+		                    					<h1>Your first step towards japan</h1>
+												<p>All the what you need to knows.</p>
+												<ul class="actions">
+												<li><a href="#one" class="button scrolly">Learn more</a></li>
+												</ul>
+											</div>
+										</li>
+
+										<li class="slide slide3">
+											<div class="slide_content">	
+												<h1>Hinata</h1>
+												<p>A japaneese language training insitute.<br />
+												Based in the heart of KTM.</p>
+												<ul class="actions">
+												<li><a href="#one" class="button scrolly">Learn more</a></li>
+												</ul>
+											</div>
+										</li>
+                   						<!-- 
+                      				    <li class="slide slide4">slide4</li>
+                   						<li class="slide slide5">slide5</li>
+                   					 	<li class="slide slide1">slide1</li> -->
+               					 </ul>
+            					</div>
+							
+						</div>
+					</section>
+
+					
+      
+    		
+
+
+			</div>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">
+
+				'use strict';
+
+				$(function() {
+
+				    //settings for slider
+				    var width = 1024;
+				    var animationSpeed = 1000;
+				    var pause = 3000;
+				    var currentSlide = 1;
+
+				    //cache DOM elements
+				    var $slider = $('#slider');
+				    var $slideContainer = $('.slides', $slider);
+				    var $slides = $('.slide', $slider);
+
+				    var interval;
+
+				    function startSlider() {
+				        interval = setInterval(function() {
+				            $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
+				                if (++currentSlide === $slides.length) {
+				                    currentSlide = 1;
+				                    $slideContainer.css('margin-left', 0);
+				                }
+				            });
+				        }, pause);
+				    }
+				    
+
+				    startSlider();
+
+
+				});
+
+			</script>
+	
+
+	</body>
+</html>
